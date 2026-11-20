@@ -629,8 +629,6 @@ function renderIcons(){
    ========================================================= */
 
 function getLang(){
-  const saved = localStorage.getItem('site-lang');
-  if (saved && TRANSLATIONS[saved]) return saved;
   return 'fr';
 }
 
@@ -639,14 +637,14 @@ function setLangStorage(lang){
 }
 
 function t(key){
-  const lang = getLang();
+  const lang = 'fr';
   const val = TRANSLATIONS[lang] && TRANSLATIONS[lang][key];
   if (val !== undefined) return val;
   return (TRANSLATIONS.fr && TRANSLATIONS.fr[key]) || '';
 }
 
 function applyTranslations(){
-  const lang = getLang();
+  const lang = 'fr';
   document.documentElement.setAttribute('lang', lang);
 
   document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -674,7 +672,7 @@ function applyTranslations(){
 }
 
 function updateLangSwitcherUI(){
-  const lang = getLang();
+  const lang = 'fr';
   document.querySelectorAll('#lang-current').forEach(el => {
     el.textContent = lang.toUpperCase();
   });
@@ -763,7 +761,7 @@ function hpColor(level, max){
 }
 
 function renderSkills(){
-  const lang = getLang();
+  const lang = 'fr';
   const skillsList = document.getElementById('skills-list');
   if (skillsList){
     skillsList.innerHTML = '';
@@ -831,7 +829,7 @@ let activeProjectIndex = 0;
 let activeTagFilter = 'all';
 
 function renderProjects(){
-  const lang = getLang();
+  const lang = 'fr';
   const isCerts = document.body.dataset.collection === 'certifications';
   const ITEMS = isCerts ? CERTIFICATIONS : PROJECTS;
   const K = isCerts ? 'certs' : 'projects';
