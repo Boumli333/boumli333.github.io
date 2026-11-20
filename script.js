@@ -988,7 +988,7 @@ function initMenuToggle(){
     document.querySelectorAll('.ingame-menu a').forEach(a => {
       if (a.getAttribute('href') === path) a.classList.add('active');
     });
-    applyTranslations();
+
     renderSkills();
     renderProjects();
     renderIcons();
