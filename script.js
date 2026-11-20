@@ -628,11 +628,7 @@ function renderIcons(){
    MOTEUR I18N
    ========================================================= */
 
-function getLang(){
-  const saved = localStorage.getItem('site-lang');
-  if (saved && TRANSLATIONS[saved]) return saved;
-  return 'fr';
-}
+
 
 function setLangStorage(lang){
   localStorage.setItem('site-lang', lang);
