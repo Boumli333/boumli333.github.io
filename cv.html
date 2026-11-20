@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sac — CV — Lucas Debruyne</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="scanlines"></div>
+<div class="gba-frame">
+
+  <div class="status-bar">
+    <div class="status-left">
+      <span class="brand"><span class="power-light"></span>LUCAS.DEBRUYNE</span>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="ingame-menu">
+        <span class="pixel-icon icon-sm" data-icon="menu"></span>
+        <span data-i18n="nav.menu">MENU</span>
+      </button>
+    </div>
+    <div class="status-right">
+      <span data-i18n="status.cv">CV</span>
+      <div class="lang-switch">
+        <button class="lang-btn" id="lang-btn" type="button" aria-haspopup="true" aria-expanded="false">
+          <span class="pixel-icon icon-sm" data-icon="globe"></span>
+          <span id="lang-current">FR</span>
+        </button>
+        <ul class="lang-menu" id="lang-menu" hidden>
+          <li><button type="button" data-lang="fr"><span class="flag">FR</span>Français</button></li>
+          <li><button type="button" data-lang="en"><span class="flag">EN</span>English</button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="ingame-menu" id="ingame-menu" hidden>
+    <ul>
+      <li><a href="index.html"><span data-i18n="nav.home">ACCUEIL</span></a></li>
+      <li><a href="about.html"><span data-i18n="nav.profile">PROFIL</span></a></li>
+      <li><a href="skills.html"><span data-i18n="nav.pokedex">COMPÉTENCES</span></a></li>
+      <li><a href="education.html"><span data-i18n="nav.education">FORMATION</span></a></li>
+      <li><a href="experience.html"><span data-i18n="nav.experience">EXPéRIENCE</span></a></li>
+      <li><a href="stage.html"><span data-i18n="nav.internship">STAGE</span></a></li>
+      <li><a href="projects.html"><span data-i18n="nav.projects">PROJETS</span></a></li>
+      <li><a href="certifications.html"><span data-i18n="nav.certifications">CERTIFICATIONS</span></a></li>
+      <li><a href="cv.html"><span data-i18n="nav.cv">CV</span></a></li>
+      <li><a href="contact.html"><span data-i18n="nav.contact">CONTACT</span></a></li>
+      <li class="menu-close-item"><button type="button" id="menu-close-btn"><span data-i18n="nav.close">FERMER</span></button></li>
+    </ul>
+  </div>
+
+  <main>
+    <div class="page-hero">
+      <div class="hero-cloud" style="width:70px;height:24px;top:12px;left:14%;"></div>
+      <div class="hero-cloud" style="width:60px;height:20px;top:20px;left:68%;"></div>
+      <div class="hero-grass-pattern"></div>
+      <div class="hero-inner">
+        <h1 class="hero-title" data-i18n="nav.cv">CV</h1>
+      </div>
+    </div>
+
+    <section>
+      <div class="section-inner">
+        <h2 class="section-title" data-i18n="cv.section.title">CURRICULUM VITAE</h2>
+        <div class="bag-panel">
+          <p data-i18n="cv.intro">Retrouve l'intégralité de mon parcours, mes compétences et mes coordonnées dans mon CV.</p>
+          <a class="cta-button" href="CV-Lucas-Debruyne.pdf" download>⬇ <span data-i18n="cv.download.button">TÉLÉCHARGER LE CV</span></a>
+
+          <div class="item-list">
+            <div class="item-row"><span class="icon pixel-icon icon-md" data-icon="gradcap"></span><span><b data-i18n="cv.item.formation.label">FORMATION</b><span data-i18n="cv.item.formation.value">BTS SIO SLAM — Nantes</span></span></div>
+            <div class="item-row"><span class="icon pixel-icon icon-md" data-icon="gear"></span><span><b data-i18n="cv.item.skills.label">COMPÉTENCES</b><span data-i18n="cv.item.skills.value">Python, C#, Web, Unity…</span></span></div>
+            <div class="item-row"><span class="icon pixel-icon icon-md" data-icon="globe"></span><span><b data-i18n="cv.item.languages.label">LANGUES</b><span data-i18n="cv.item.languages.value">Anglais, Allemand, Breton</span></span></div>
+            <div class="item-row"><span class="icon pixel-icon icon-md" data-icon="ball"></span><span><b data-i18n="cv.item.passions.label">PASSIONS</b><span data-i18n="cv.item.passions.value">Football, Musique, Graphisme</span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="page-nav">
+    <a class="prev" href="certifications.html">← <span data-i18n="nav.certifications">CERTIFICATIONS</span></a>
+    <a class="next" href="contact.html"><span data-i18n="nav.contact">CONTACT</span> →</a>
+  </div>
+
+  <footer class="site-footer" data-i18n="footer.tagline">Portfolio de Lucas Debruyne — thème Pokémon Émeraude</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lucas Debruyne — Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="scanlines"></div>
+<div class="gba-frame">
+
+  <div class="status-bar">
+    <div class="status-left">
+      <span class="brand"><span class="power-light"></span>LUCAS.DEBRUYNE</span>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="ingame-menu">
+        <span class="pixel-icon icon-sm" data-icon="menu"></span>
+        <span data-i18n="nav.menu">MENU</span>
+      </button>
+    </div>
+    <div class="status-right">
+      <span data-i18n="status.home">ACCUEIL</span>
+      <div class="lang-switch">
+        <button class="lang-btn" id="lang-btn" type="button" aria-haspopup="true" aria-expanded="false">
+          <span class="pixel-icon icon-sm" data-icon="globe"></span>
+          <span id="lang-current">FR</span>
+        </button>
+        <ul class="lang-menu" id="lang-menu" hidden>
+          <li><button type="button" data-lang="fr"><span class="flag">FR</span>Français</button></li>
+          <li><button type="button" data-lang="en"><span class="flag">EN</span>English</button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="ingame-menu" id="ingame-menu" hidden>
+    <ul>
+      <li><a href="index.html"><span data-i18n="nav.home">ACCUEIL</span></a></li>
+      <li><a href="about.html"><span data-i18n="nav.profile">PROFIL</span></a></li>
+      <li><a href="skills.html"><span data-i18n="nav.pokedex">COMPÉTENCES</span></a></li>
+      <li><a href="education.html"><span data-i18n="nav.education">FORMATION</span></a></li>
+      <li><a href="experience.html"><span data-i18n="nav.experience">EXPéRIENCE</span></a></li>
+      <li><a href="stage.html"><span data-i18n="nav.internship">STAGE</span></a></li>
+      <li><a href="projects.html"><span data-i18n="nav.projects">PROJETS</span></a></li>
+      <li><a href="certifications.html"><span data-i18n="nav.certifications">CERTIFICATIONS</span></a></li>
+      <li><a href="cv.html"><span data-i18n="nav.cv">CV</span></a></li>
+      <li><a href="contact.html"><span data-i18n="nav.contact">CONTACT</span></a></li>
+      <li class="menu-close-item"><button type="button" id="menu-close-btn"><span data-i18n="nav.close">FERMER</span></button></li>
+    </ul>
+  </div>
+
+  <main>
+    <div class="page-hero tall">
+      <div class="hero-cloud" style="width:70px;height:26px;top:14px;left:8%;"></div>
+      <div class="hero-cloud" style="width:100px;height:32px;top:28px;left:55%;"></div>
+      <div class="hero-cloud" style="width:60px;height:22px;top:10px;left:78%;"></div>
+      <div class="hero-grass-pattern"></div>
+      <div class="hero-scenery-wrap">
+      <svg class="hero-scenery" viewBox="0 0 320 130" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" preserveAspectRatio="xMidYMax meet">
+        <!-- arbre -->
+        <rect x="18" y="70" width="6" height="18" fill="#6b4a26"/>
+        <rect x="6" y="46" width="30" height="26" fill="#3d7d17"/>
+        <rect x="0" y="54" width="42" height="12" fill="#3d7d17"/>
+        <rect x="10" y="40" width="22" height="10" fill="#4fa21e"/>
+        <!-- cabane en bois -->
+        <rect x="60" y="70" width="58" height="34" fill="#9e6b3c"/>
+        <rect x="60" y="76" width="58" height="2" fill="#a9824f"/>
+        <rect x="60" y="83" width="58" height="2" fill="#a9824f"/>
+        <rect x="60" y="90" width="58" height="2" fill="#a9824f"/>
+        <rect x="60" y="97" width="58" height="2" fill="#a9824f"/>
+        <rect x="56" y="52" width="66" height="20" fill="#7a4f2d"/>
+        <rect x="56" y="52" width="66" height="6" fill="#5c3a20"/>
+        <rect x="84" y="82" width="12" height="22" fill="#5c3a20"/>
+        <rect x="66" y="80" width="10" height="10" fill="#eaeaea"/>
+        <rect x="102" y="80" width="10" height="10" fill="#eaeaea"/>
+        <rect x="122" y="72" width="4" height="32" fill="#7a4f2d"/>
+        <rect x="122" y="76" width="10" height="2" fill="#7a4f2d"/>
+        <rect x="122" y="84" width="10" height="2" fill="#7a4f2d"/>
+        <rect x="122" y="92" width="10" height="2" fill="#7a4f2d"/>
+        <!-- bâtiment (style "centre" générique, sans logo) -->
+        <rect x="190" y="58" width="90" height="46" fill="#f2eee2"/>
+        <rect x="184" y="40" width="102" height="20" fill="#b5433c"/>
+        <rect x="184" y="40" width="102" height="6" fill="#8f2f29"/>
+        <rect x="222" y="42" width="26" height="10" fill="#f2eee2"/>
+        <rect x="202" y="76" width="16" height="16" fill="#5a86c9"/>
+        <rect x="252" y="76" width="16" height="16" fill="#5a86c9"/>
+        <rect x="228" y="80" width="14" height="24" fill="#5c3a20"/>
+        <rect x="184" y="102" width="102" height="4" fill="#cfc7b0"/>
+        <!-- ordinateur au sol (clin d'œil rétro) -->
+        <rect x="138" y="92" width="16" height="12" fill="#3a3a3a"/>
+        <rect x="140" y="94" width="12" height="8" fill="#5a86c9"/>
+        <rect x="142" y="96" width="8" height="4" fill="#dfeef2"/>
+        <rect x="144" y="104" width="4" height="4" fill="#2c2438"/>
+        <!-- personnage secondaire -->
+        <rect x="160" y="86" width="8" height="6" fill="#f3c9a0"/>
+        <rect x="159" y="83" width="10" height="4" fill="#c0392b"/>
+        <rect x="159" y="92" width="10" height="8" fill="#e08a3c"/>
+        <rect x="159" y="100" width="4" height="6" fill="#3a3a3a"/>
+        <rect x="165" y="100" width="4" height="6" fill="#3a3a3a"/>
+      </svg>
+      </div>
+      <div class="hero-inner">
+        <svg class="trainer-sprite" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+          <rect x="6" y="1" width="4" height="3" fill="#f3c9a0"/>
+          <rect x="5" y="0" width="6" height="2" fill="#e0e0e0"/>
+          <rect x="5" y="4" width="6" height="5" fill="#3a6ea5"/>
+          <rect x="4" y="9" width="3" height="4" fill="#2c2438"/>
+          <rect x="9" y="9" width="3" height="4" fill="#2c2438"/>
+          <rect x="5" y="13" width="2" height="2" fill="#eab64d"/>
+          <rect x="9" y="13" width="2" height="2" fill="#eab64d"/>
+        </svg>
+        <h1 class="hero-title">LUCAS DEBRUYNE</h1>
+        <div class="dialog-box">
+          <span class="who" data-i18n="home.dialog.who">LUCAS :</span>
+          <span id="typed-line"></span>
+          <div class="dialog-arrow"></div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="section-inner">
+        <h2 class="section-title" data-i18n="home.trainercard.title">APERÇU</h2>
+        <div class="trainer-card">
+          <div class="portrait">
+            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+              <rect x="6" y="1" width="4" height="3" fill="#f3c9a0"/>
+              <rect x="5" y="0" width="6" height="2" fill="#e0e0e0"/>
+              <rect x="5" y="4" width="6" height="5" fill="#3a6ea5"/>
+              <rect x="4" y="9" width="3" height="4" fill="#2c2438"/>
+              <rect x="9" y="9" width="3" height="4" fill="#2c2438"/>
+              <rect x="5" y="13" width="2" height="2" fill="#eab64d"/>
+              <rect x="9" y="13" width="2" height="2" fill="#eab64d"/>
+            </svg>
+          </div>
+          <div>
+            <h3>LUCAS DEBRUYNE</h3>
+            <div style="font-size:18px;" data-i18n-html="home.trainercard.body">BTS SIO SLAM — Lycée Carcouet, Nantes<br>Recherche alternance dès septembre 2026</div>
+            <div class="badges">
+              <div class="mini-badge pixel-icon icon-md" data-icon="monitor" data-i18n-title="home.badge.python" title="Python"></div>
+              <div class="mini-badge pixel-icon icon-md" data-icon="globe" data-i18n-title="home.badge.web" title="Web"></div>
+              <div class="mini-badge pixel-icon icon-md" data-icon="cartridge" data-i18n-title="home.badge.unity" title="Unity"></div>
+              <div class="mini-badge pixel-icon icon-md" data-icon="music" data-i18n-title="home.badge.music" title="Musique"></div>
+              <div class="mini-badge pixel-icon icon-md" data-icon="ball" data-i18n-title="home.badge.football" title="Football"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quick-links">
+          <a class="quick-card" href="about.html">
+            <div class="icon pixel-icon icon-lg" data-icon="person"></div>
+            <b data-i18n="home.quick.profile.label">PROFIL</b>
+            <span data-i18n="home.quick.profile.desc">Qui je suis, en bref</span>
+          </a>
+          <a class="quick-card" href="skills.html">
+            <div class="icon pixel-icon icon-lg" data-icon="gear"></div>
+            <b data-i18n="home.quick.pokedex.label">COMPÉTENCES</b>
+            <span data-i18n="home.quick.pokedex.desc">Compétences &amp; langues</span>
+          </a>
+          <a class="quick-card" href="education.html">
+            <div class="icon pixel-icon icon-lg" data-icon="flag"></div>
+            <b data-i18n="home.quick.education.label">FORMATION</b>
+            <span data-i18n="home.quick.education.desc">Formation &amp; itinéraire</span>
+          </a>
+          <a class="quick-card" href="projects.html">
+            <div class="icon pixel-icon icon-lg" data-icon="box"></div>
+            <b data-i18n="home.quick.projects.label">PROJETS</b>
+            <span data-i18n="home.quick.projects.desc">Boîte PC des réalisations</span>
+          </a>
+          <a class="quick-card" href="cv.html">
+            <div class="icon pixel-icon icon-lg" data-icon="bag"></div>
+            <b data-i18n="home.quick.cv.label">CV</b>
+            <span data-i18n="home.quick.cv.desc">Télécharger le PDF</span>
+          </a>
+          <a class="quick-card" href="contact.html">
+            <div class="icon pixel-icon icon-lg" data-icon="disk"></div>
+            <b data-i18n="home.quick.contact.label">CONTACT</b>
+            <span data-i18n="home.quick.contact.desc">Écran de sauvegarde</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <footer class="site-footer" data-i18n="footer.tagline">Portfolio de Lucas Debruyne — thème Pokémon Émeraude</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

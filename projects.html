@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boîte PC — Projets — Lucas Debruyne</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="scanlines"></div>
+<div class="gba-frame">
+
+  <div class="status-bar">
+    <div class="status-left">
+      <span class="brand"><span class="power-light"></span>LUCAS.DEBRUYNE</span>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="ingame-menu">
+        <span class="pixel-icon icon-sm" data-icon="menu"></span>
+        <span data-i18n="nav.menu">MENU</span>
+      </button>
+    </div>
+    <div class="status-right">
+      <span data-i18n="status.projects">PROJETS</span>
+      <div class="lang-switch">
+        <button class="lang-btn" id="lang-btn" type="button" aria-haspopup="true" aria-expanded="false">
+          <span class="pixel-icon icon-sm" data-icon="globe"></span>
+          <span id="lang-current">FR</span>
+        </button>
+        <ul class="lang-menu" id="lang-menu" hidden>
+          <li><button type="button" data-lang="fr"><span class="flag">FR</span>Français</button></li>
+          <li><button type="button" data-lang="en"><span class="flag">EN</span>English</button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="ingame-menu" id="ingame-menu" hidden>
+    <ul>
+      <li><a href="index.html"><span data-i18n="nav.home">ACCUEIL</span></a></li>
+      <li><a href="about.html"><span data-i18n="nav.profile">PROFIL</span></a></li>
+      <li><a href="skills.html"><span data-i18n="nav.pokedex">COMPÉTENCES</span></a></li>
+      <li><a href="education.html"><span data-i18n="nav.education">FORMATION</span></a></li>
+      <li><a href="experience.html"><span data-i18n="nav.experience">EXPéRIENCE</span></a></li>
+      <li><a href="stage.html"><span data-i18n="nav.internship">STAGE</span></a></li>
+      <li><a href="projects.html"><span data-i18n="nav.projects">PROJETS</span></a></li>
+      <li><a href="certifications.html"><span data-i18n="nav.certifications">CERTIFICATIONS</span></a></li>
+      <li><a href="cv.html"><span data-i18n="nav.cv">CV</span></a></li>
+      <li><a href="contact.html"><span data-i18n="nav.contact">CONTACT</span></a></li>
+      <li class="menu-close-item"><button type="button" id="menu-close-btn"><span data-i18n="nav.close">FERMER</span></button></li>
+    </ul>
+  </div>
+
+  <main>
+    <div class="page-hero">
+      <div class="hero-cloud" style="width:60px;height:22px;top:12px;left:18%;"></div>
+      <div class="hero-cloud" style="width:80px;height:26px;top:18px;left:62%;"></div>
+      <div class="hero-grass-pattern"></div>
+      <div class="hero-inner">
+        <h1 class="hero-title" data-i18n="projects.hero.title">PROJETS</h1>
+      </div>
+    </div>
+
+    <section>
+      <div class="section-inner">
+        <h2 class="section-title" data-i18n="projects.section.title">PROJETS INFORMATIQUES</h2>
+        <div class="pc-frame">
+          <div class="pc-shell">
+            <div class="pc-topbar">
+              <a class="pc-btn pc-btn-green" href="skills.html" data-i18n="projects.btn.party">COMPÉTENCES</a>
+              <span class="pc-topbar-title" data-i18n="projects.section.title">PROJETS INFORMATIQUES</span>
+              <a class="pc-btn pc-btn-blue" href="index.html" data-i18n="projects.btn.close">RETOUR</a>
+            </div>
+            <div class="pc-navigator">
+              <span class="pc-arrow" aria-hidden="true">◂</span>
+              <span id="box-count"></span>
+              <span class="pc-arrow" aria-hidden="true">▸</span>
+            </div>
+            <div class="pc-filters" id="pc-filters"></div>
+            <div class="pc-body">
+              <div class="pc-left">
+                <div class="pc-preview" id="pc-preview"></div>
+                <div class="pc-details" id="pc-details">
+                  <div class="empty" data-i18n-html="projects.empty.hint">Clique sur un projet<br>dans la boîte →</div>
+                </div>
+              </div>
+              <div class="box-grid" id="box-grid"></div>
+            </div>
+          </div>
+        </div>
+        <p style="margin-top:16px;font-size:17px;opacity:.75;" data-i18n="projects.note">
+          Note pour Lucas : cette liste est pré-remplie à partir de ton CV. Ouvre
+          script.js et modifie le tableau PROJECTS tout en haut du
+          fichier pour ajouter tes vrais liens (GitHub, démo…), changer les descriptions ou
+          ajouter de nouveaux projets — toutes les pages du site se mettent à jour automatiquement.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <div class="page-nav">
+    <a class="prev" href="stage.html">← <span data-i18n="nav.internship">STAGE</span></a>
+    <a class="next" href="certifications.html"><span data-i18n="nav.certifications">CERTIFICATIONS</span> →</a>
+  </div>
+
+  <footer class="site-footer" data-i18n="footer.tagline">Portfolio de Lucas Debruyne — thème Pokémon Émeraude</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

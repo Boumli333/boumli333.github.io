@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parcours — Lucas Debruyne</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="scanlines"></div>
+<div class="gba-frame">
+
+  <div class="status-bar">
+    <div class="status-left">
+      <span class="brand"><span class="power-light"></span>LUCAS.DEBRUYNE</span>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="ingame-menu">
+        <span class="pixel-icon icon-sm" data-icon="menu"></span>
+        <span data-i18n="nav.menu">MENU</span>
+      </button>
+    </div>
+    <div class="status-right">
+      <span data-i18n="status.education">FORMATION</span>
+      <div class="lang-switch">
+        <button class="lang-btn" id="lang-btn" type="button" aria-haspopup="true" aria-expanded="false">
+          <span class="pixel-icon icon-sm" data-icon="globe"></span>
+          <span id="lang-current">FR</span>
+        </button>
+        <ul class="lang-menu" id="lang-menu" hidden>
+          <li><button type="button" data-lang="fr"><span class="flag">FR</span>Français</button></li>
+          <li><button type="button" data-lang="en"><span class="flag">EN</span>English</button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="ingame-menu" id="ingame-menu" hidden>
+    <ul>
+      <li><a href="index.html"><span data-i18n="nav.home">ACCUEIL</span></a></li>
+      <li><a href="about.html"><span data-i18n="nav.profile">PROFIL</span></a></li>
+      <li><a href="skills.html"><span data-i18n="nav.pokedex">COMPÉTENCES</span></a></li>
+      <li><a href="education.html"><span data-i18n="nav.education">FORMATION</span></a></li>
+      <li><a href="experience.html"><span data-i18n="nav.experience">EXPéRIENCE</span></a></li>
+      <li><a href="stage.html"><span data-i18n="nav.internship">STAGE</span></a></li>
+      <li><a href="projects.html"><span data-i18n="nav.projects">PROJETS</span></a></li>
+      <li><a href="certifications.html"><span data-i18n="nav.certifications">CERTIFICATIONS</span></a></li>
+      <li><a href="cv.html"><span data-i18n="nav.cv">CV</span></a></li>
+      <li><a href="contact.html"><span data-i18n="nav.contact">CONTACT</span></a></li>
+      <li class="menu-close-item"><button type="button" id="menu-close-btn"><span data-i18n="nav.close">FERMER</span></button></li>
+    </ul>
+  </div>
+
+  <main>
+    <div class="page-hero">
+      <div class="hero-cloud" style="width:70px;height:24px;top:12px;left:10%;"></div>
+      <div class="hero-cloud" style="width:60px;height:20px;top:20px;left:70%;"></div>
+      <div class="hero-grass-pattern"></div>
+      <div class="hero-inner">
+        <h1 class="hero-title" data-i18n="nav.education">FORMATION</h1>
+      </div>
+    </div>
+
+    <section>
+      <div class="section-inner">
+        <h2 class="section-title" data-i18n="education.section.title">ITINÉRAIRE — ÉDUCATION</h2>
+        <div class="route-path">
+
+          <div class="route-stop">
+            <div class="route-sign">
+              <span class="date" data-i18n="education.bts.date">SEPT. 2025 — JUIN 2027</span>
+              <h3 data-i18n="education.bts.title">BTS SIO SLAM — Lycée Carcouet, Nantes</h3>
+              <ul data-i18n-html="education.bts.list">
+                <li>Développement d'applications web/mobile (HTML, CSS, JavaScript, PHP, Python…)</li>
+                <li>Conception et maintenance de bases de données (MySQL, SQL Server)</li>
+                <li>Analyse des besoins utilisateurs et rédaction de documents techniques</li>
+                <li>Apprentissage du framework web Bootstrap</li>
+                <li>Mise en place, test et déploiement d'applications métiers</li>
+                <li>Réalisations : jeu Unity, jeu du Craps en C#, site de gestion de course cycliste (HTML/PHP/CSS)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="route-stop">
+            <div class="route-sign">
+              <span class="date" data-i18n="education.bac.date">SEPT. 2022 — JUILLET 2025</span>
+              <h3 data-i18n="education.bac.title">Bac général — Lycée Caroline Aigle, Nort-sur-Erdre</h3>
+              <ul data-i18n-html="education.bac.list">
+                <li>Bases solides en algorithmique et programmation (Python majoritairement)</li>
+                <li>Conception de programmes : fonctions, structures de données, récursivité</li>
+                <li>Compréhension des architectures informatiques (réseaux, systèmes, bases de données)</li>
+                <li>Raisonnement mathématique, logique, statistiques et modélisation</li>
+                <li>Réalisations : optimiseur de trajet dans le métro parisien (algorithme de Dijkstra), jeu type « Football Manager » en Python, générateur de carte FIFA Ultimate Team (HTML/JS)</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="page-nav">
+    <a class="prev" href="skills.html">← <span data-i18n="nav.pokedex">COMPÉTENCES</span></a>
+    <a class="next" href="experience.html"><span data-i18n="nav.experience">EXPéRIENCE</span> →</a>
+  </div>
+
+  <footer class="site-footer" data-i18n="footer.tagline">Portfolio de Lucas Debruyne — thème Pokémon Émeraude</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
